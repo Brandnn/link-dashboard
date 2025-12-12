@@ -26,10 +26,15 @@ elif choice == "Rack & POD Dashboard":
         '<a href="http://iedubm0app02:8501/" target="_blank">📊 Open Rack & POD Dashboard in new tab</a>',
         unsafe_allow_html=True
     )
-    st.components.v1.iframe(
-        "https://www.wikipedia.org/",
-        height=1000,
-        width=800
+
+    # Clean embed with single scrollbar (iframe only)
+    st.components.v1.html(
+        """
+        <div style="border:2px solid #ccc; border-radius:6px;">
+            <iframe src="https://www.wikipedia.org/" width="100%" height="800" style="border:none;"></iframe>
+        </div>
+        """,
+        height=820
     )
 
 elif choice == "Example":
@@ -37,8 +42,11 @@ elif choice == "Example":
         '<a href="http://example.com/" target="_blank">📊 Open Example Dashboard in new tab</a>',
         unsafe_allow_html=True
     )
-    st.components.v1.iframe(
-        "http://example.com/",
-        height=400,
-        width=400
+    st.components.v1.html(
+        """
+        <div style="border:2px solid #ccc; border-radius:6px;">
+            <iframe src="http://example.com/" width="100%" height="800" style="border:none;"></iframe>
+        </div>
+        """,
+        height=820
     )
