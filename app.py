@@ -6,12 +6,11 @@ st.title("Embedded Dashboard")
 
 # --- Sidebar navigation ---
 st.sidebar.title("Navigation")
-choice = st.sidebar.radio("Go to:", ["Home", "Rack & POD Dashboard", "Embed 2"])
+choice = st.sidebar.radio("Go to:", ["Home", "Rack & POD Dashboard", "Example"])
 
 # --- Main content based on selection ---
 if choice == "Home":
     st.header("Home")
-    # Static placeholder text (not editable)
     placeholder_text = "Welcome to the Home tab! This is a placeholder message."
     st.write(placeholder_text)
 
@@ -21,16 +20,18 @@ elif choice == "Rack & POD Dashboard":
         unsafe_allow_html=True
     )
     st.components.v1.iframe(
-        "http://iedubm0app02:8501/",
-        height=800
+        "https://www.wikipedia.org/",
+        height=800,
+        width=400
     )
 
-elif choice == "Embed 2":
+elif choice == "Example":
     st.markdown(
-        '<a href="http://iedubm0app02:8502/" target="_blank">📊 Open Embed 2 in new tab</a>',
+        '<a href="http://example.com/" target="_blank">📊 Open Example Dashboard in new tab</a>',
         unsafe_allow_html=True
     )
     st.components.v1.iframe(
-        "http://iedubm0app02:8502/",
-        height=800
+        "http://example.com/",
+        height=800,
+        width=400
     )
