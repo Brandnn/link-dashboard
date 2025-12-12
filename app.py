@@ -11,8 +11,15 @@ choice = st.sidebar.radio("Go to:", ["Home", "Rack & POD Dashboard", "Example"])
 # --- Main content based on selection ---
 if choice == "Home":
     st.header("Home")
-    placeholder_text = "Welcome to the Home tab! This is a placeholder message."
-    st.write(placeholder_text)
+    # Two links on Home tab
+    st.markdown(
+        '<a href="http://example.com/" target="_blank">🔗 Open Example.com</a>',
+        unsafe_allow_html=True
+    )
+    st.markdown(
+        '<a href="https://www.wikipedia.org/" target="_blank">📖 Open Wikipedia</a>',
+        unsafe_allow_html=True
+    )
 
 elif choice == "Rack & POD Dashboard":
     st.markdown(
