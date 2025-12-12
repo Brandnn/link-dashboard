@@ -29,7 +29,7 @@ elif choice == "Rack & POD Dashboard":
     st.components.v1.iframe(
         "https://www.wikipedia.org/",
         height=800,
-        width=400
+        width=800
     )
 
 elif choice == "Example":
@@ -39,6 +39,6 @@ elif choice == "Example":
     )
     st.components.v1.iframe(
         "http://example.com/",
-        height=800,
+        height=400,
         width=400
     )
