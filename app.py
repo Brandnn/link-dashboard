@@ -28,7 +28,7 @@ elif choice == "Rack & POD Dashboard":
     )
     st.components.v1.iframe(
         "https://www.wikipedia.org/",
-        height=800,
+        height=1000,
         width=800
     )
 
