@@ -10,10 +10,14 @@ choice = st.sidebar.radio("Go to:", ["Home", "Rack & POD Dashboard", "Example"])
 
 # --- Main content based on selection ---
 if choice == "Home":
-    st.header("Home")
+    st.header("Links")
     # Buttons instead of links
-    st.link_button("🔗 Open Example.com", "http://example.com/")
+    st.link_button("🔗 Open iFactory", "https://prd.ifactory.dub.corp.jabil.org/home/serializedmaterialviewstandalone#/serializedMaterialViewStandalone/33192493")
     st.link_button("📖 Open Wikipedia", "https://www.wikipedia.org/")
+    st.link_button("📊 Rack And POD analytics", "http://iedubm0app02:8501/")
+    st.link_button("📈 Dashboard", "http://10.76.48.4/stacktest/v2/dashboard")
+    st.link_button("🔍 Dashboard", "http://iedubm0ssrs01/reports/report/Bretton_Test/ProcessYield_Standard_v2")
+
 
 elif choice == "Rack & POD Dashboard":
     # Clean embed with single scrollbar (iframe only)
