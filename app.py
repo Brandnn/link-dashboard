@@ -16,7 +16,7 @@ if choice == "Home":
     st.link_button("📖 Open Wikipedia", "https://www.wikipedia.org/")
     st.link_button("📊 Rack And POD analytics", "http://iedubm0app02:8501/")
     st.link_button("📈 Dashboard", "http://10.76.48.4/stacktest/v2/dashboard")
-    st.link_button("🔍 Dashboard", "http://iedubm0ssrs01/reports/report/Bretton_Test/ProcessYield_Standard_v2")
+    st.link_button("🔍 Process Yield", "http://iedubm0ssrs01/reports/report/Bretton_Test/ProcessYield_Standard_v2")
 
 
 elif choice == "Rack & POD Dashboard":
