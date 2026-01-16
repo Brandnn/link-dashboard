@@ -15,7 +15,7 @@ link_buttons = {
     "📖 Open Wikipedia": "https://www.wikipedia.org/",
     "📊 Rack And POD analytics": "http://iedubm0app02:8501/",
     "📈 Dashboard": "http://10.76.48.4/stacktest/v2/dashboard/",
-    "🔍 Process Yield": "http://iedubm0ssrs01/reports/report/Bretton_Test/ProcessYield_Standard_v2/"
+    "🔍 Process Yield": "http://iedubm0ssrs01/reports/report/Bretton_Test/ProcessYield_Standard_v2"
 }
 
 # --- Main content based on selection ---
