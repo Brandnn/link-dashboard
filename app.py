@@ -35,8 +35,13 @@ elif choice == "Example":
     st.components.v1.html(
         """
         <div style="border:2px solid #ccc; border-radius:6px;">
-            <iframe src="http://example.com/" width="100%" height="800" style="border:none;"></iframe>
+            <iframe src="http://iedubm0app02:8501/" width="100%" height="800" style="border:none;"></iframe>
         </div>
         """,
         height=820
     )
+    
+
+
+
+http://iedubm0app02:8501
